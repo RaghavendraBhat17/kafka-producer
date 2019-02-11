@@ -5,10 +5,6 @@ Gradle based project which reads from a file under resources directory and pushe
 
 - Project-Developer-apache-access-log.txt : This file does not have IP addresses that cause DDOS attack
 - access-log-with-ddos.txt: This file has IP addresses that cause DDOS attack
-### Prerequisite
-
-1. Kafka_2.10-0.10.0.0
-
 
 ### Build artifact
 
