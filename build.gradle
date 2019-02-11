@@ -1,0 +1,34 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+//group = 'com.ddos'
+mainClassName = "com.kafka.producer.KafkaFileProducer"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	
+	compile([
+        'org.apache.kafka:kafka_2.10:0.10.0.0',
+        'org.apache.kafka:kafka-clients:0.10.0.0'
+        
+    ])
+}
+
+distributions {
+	main {
+        contents {
+            from("resources") {
+                into("resources")
+            }
+        }
+    }
+}
+
